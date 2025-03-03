@@ -8,8 +8,10 @@
 
 import random
 
+def list_generator(n):
+    return [random.randint(5, 6*100) for i in range(n)]
+
 number_elements = 6 + 10  # количество элементов
 
-random_ls = [random.randint(5, 6*100) for i in range(number_elements)]
-
+random_ls = list_generator(number_elements)
 print(random_ls)
